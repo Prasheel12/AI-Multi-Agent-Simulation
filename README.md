@@ -1,5 +1,4 @@
 # Design and Implementation of a Multi-Agent Game
-## Artificial Intelligence - SOFE 3720 Course Project
 
 ### Description:
 
@@ -31,14 +30,13 @@
 
 14. Agents avoid colliding each other. They will never remain reachable by other agents.
 
-#### Implement the following scenarios:
+#### Behaviour of agents depend on the following scenarios:
 
 ##### Scenario 1: Competition
 
 1. The game will be over as soon as one of the agents collects all its targets.
 
-2. Only public communication channel is open for all agents. The private channels are closed. Agents can broadcast anything including right or wrong information about the location of other
-targets.
+2. Only public communication channel is open for all agents. The private channels are closed. Agents can broadcast anything including right or wrong information about the location of other targets.
 
 ##### Scenario 2: Collaboration
 
@@ -51,35 +49,3 @@ targets.
 1. The game will be over as soon as one of the agents collects all its targets.
 
 2. Both public and private channels are open. Example of a private communication: Agent Allocates target TB1. It may or may not notify the agent B the location of TB1.
-
-### Deliverables:
-
-1. Your simulation generates a CSV file with the following columns. The name of this CSV is: `G[your group number]_1.csv`
-
-        a. Scenario number (1,2 or 3)
-        b. Iteration number
-        c. Agent number
-        d. Number of collected targets by the agent
-        e. Number of steps taken by the agent at the end of iteration
-        f. Agent happiness: d/(e+1)
-        g. Maximum happiness in each iteration
-        h. Minimum happiness in each iteration
-        i. Average happiness in each iteration
-        j. Standard deviation of happiness in each iteration
-        k. Agent competitiveness: (f-h)/(g-h)
-
-2. Your simulation generates another csv file from the previous CSV with the following columns. The name of this CSV is: `G[your group number]_2.csv`
-
-        a. Scenario number (1,2 and 3)
-        b. Average of column “i” for the iterations of same scenario
-        c. Average of column “k” for the iterations of same scenario
-
-3. A simple graphical interface is necessary for the simulation.
-
-4. We expect your simulation is capable of many iterations (10 to 100 times) with random setup.
-
-5. Deliverables: Two above mentioned CSV file in right format> since a script will read and process
-the files, any other format will not be accepted and marks will be deducted. You has to send the
-files before your demo via blackboard messaging.
-
-6. You will present your simulation according to s schedule will be posted later.
